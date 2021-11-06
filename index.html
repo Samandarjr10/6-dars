@@ -9,21 +9,26 @@
     <title>Templete</title>
 </head>
 <body>
-    <h1 class="visually-hidden">Currency exchange</h1>
-    <header class="pt-5">
+    <h1 class="text-center text-danger display-4">
+        Currency exchange
+    </h1>
+    <header class="header pt-5 pb-5 bg-info header">
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="">
-                    <input type="text" class="form-control p-2" id="exampleFormControlInput1" placeholder="">
+            <form action="https://htmlacademy.ru/" method="POST">
+                <div class="d-flex justify-content-between">
+                    <div class="">
+                        <input type="number" class="form-control" placeholder="0" id="input">
+                        <div id="help" class="header__help form-text text-danger">(so'm)</div>
+                    </div>
+                    <select class="form-control form-select-lg w-50" aria-label="Default select example" id="header__currency">
+                        <option selected hidden>Currencies</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">RUB</option>
+                      </select>
+                    <button class="btn btn-primary" id="button" type="button">Calculation</button>
                 </div>
-                <select class="form-select-sm w-50" aria-label="Default select example">
-                    <option selected hidden>Currencies</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="RUB">RUB</option>
-                  </select>
-                <button class="btn btn-primary" type="button">Primary</button>
-            </div>
+            </form>
         </div>
     </header>
 
